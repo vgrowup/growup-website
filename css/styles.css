@@ -5,7 +5,7 @@ body
   padding:0;
   color: white;
   font-family: "Avenir Next", "Avenir", sans-serif;
-  
+  z-index: 0;
   overflow-x: hidden; 
 }
 .navbar-dark {
@@ -14,7 +14,7 @@ body
  }
 
 .navbar-brand{
-    padding-left: 5px;
+    
     padding-inline-end: 40px;
 }
 
@@ -23,6 +23,12 @@ body
     padding-right: 10px;
 }
 
+#Navbar{
+    background: lightseagreen;
+    min-width: 100vh;
+    position: relative;
+    
+}
 
 .carousel {
     
@@ -35,7 +41,8 @@ body
         left: 0;      
         width: 100%;   
         height: 100%;   
-        min-height: 300px; }
+        min-height: 300px;
+        margin-top: 60px; }
   
 
 
@@ -60,29 +67,110 @@ body
 }
 .leftside li{
     list-style-type: none;
-    padding: 20px;
-    transition: .6s;
-    padding-left: 0px;
+    margin-left: 0px;
+    transition: .1s;
+    padding-left: 2px;
     position: relative;
+    margin-top: 10px;
+   
     
 }
 .leftside li i{
-    font-size: 35px;
+    font-size: 25px;
     color: black;
     margin-left: 0px;
+    padding: 20px;
+   
+
 }
 .leftside li:hover{
-    padding: 20px 40px;
+    padding-left: 10px;
+}
+/*
+#button-facebook i:hover {    
+   background: #3b5998;
+   color: #fff;
+   border-radius: 20px;
+   width: 59px;
+   margin-left: 0px;
+   
+ 
+} 
+
+#button-instagram i:hover{
+   
+    border-radius: 20px;
+    color: #fff;    
+    background: #d6249f;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+   
+ 
+}
+#button-linkedin i:hover{
+    background: #0077B5;
+    color: #fff;
+    border-radius: 20px;
+}
+#button-pinterest i:hover{
+background:  #c8232c ;
+color: #fff;
+border-radius: 20px;
+
+}
+#button-twitter i:hover{
+    background: #38A1F3;
+    color: #fff;
+    border-radius: 20px;
 }
 
 .leftside li:nth-child(1){
-    margin-left: 0px;
+    margin-left: 5px;
+    border-radius: 30%;
 }
-
+*/
 ul{
     list-style: none;
+    border: none;
+    outline: none;
    
 }
+
+.dropdown button{
+    color: white;
+    opacity: 0.5;
+    border: teal;
+    padding-top: 8px;
+    outline: none;
+    
+}
+.dropdown .btn{
+    border: none;
+    outline: none;
+}
+.dropdown button:hover{
+    opacity: 1;
+    color: white;
+    border: none;
+    outline: none;
+    
+}
+.dropdown{
+    
+    background:transparent;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    outline: none;
+}
+
+.dropdown a:hover{
+   opacity: 0.7;
+   border: none;
+   text-decoration: none;
+   outline: none;
+   
+}
+/*
 .cf ul {
 	-webkit-font-smoothing: antialiased;
 	list-style: none;
@@ -101,14 +189,15 @@ ul{
     padding: 0px;
     margin-top: 17%;
 	text-align: center;
-	text-decoration: none;
+    text-decoration: none;
+    
 	
 }
 
 .cf li:hover a {
-	opacity:0.9;
     color: white;
     text-decoration: none;
+    background: transparent;
 }
 .cf li ul {
 	
@@ -125,11 +214,14 @@ ul{
 }
 
 .cf li ul a:hover {
-    background: transparent;
-    opacity: 5;
+    
+    opacity: 0.5;
     
 }
-
+#link1{
+    background: #0077B5;
+}
+*/
 .media-body{
     padding-top: 40px;
 }
@@ -137,3 +229,9 @@ ul{
 .image-circle{
     border-radius: 50%;
 }
+.dropdown-menu a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-menu {display: block;}
+
+.dropdown:hover .btn {background-color: grey;}
