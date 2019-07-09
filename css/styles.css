@@ -7,69 +7,109 @@ body
   font-family: "Avenir Next", "Avenir", sans-serif;
   z-index: 0;
   overflow-x: hidden; 
+  background-color: beige !important;
 }
 .navbar-dark {
-    background-color: lightseagreen;
-    height: 70px;
- }
+    background-color: #182a61;
+}
+
+.navbar-nav li {
+  margin-left: 80px;
+  padding: 5px;}
+.navbar-text{
+    padding-top: 100px;
+    padding: 100px;
+    margin-top: 6px; 
+    cursor: pointer;  
+}
 
 .navbar-brand{
     
-    padding-inline-end: 40px;
+    padding-left: 15px;
+}
+/*
+.navbar-brand:hover{
+    opacity: 0.8;
 }
 
-.nav-item{
-   
-    padding-right: 10px;
+.nav-item{   
+    padding-left: 20px;
 }
-
+.navbar-nav{
+    margin-left: 550px;
+}
 #Navbar{
-    background: lightseagreen;
+    background:  #182a61;
     min-width: 100vh;
     position: relative;
-    
+        
 }
-
+#Navbar a{
+    color: whitesmoke;
+    }
+#Navbar a:hover{
+    color: yellow;
+    opacity: 2;
+}
+.navbar-collapse{
+    color: #fff;
+} */
+/*
 .carousel {
-    
-    background: #303030; }
-    .carousel .carousel-item {
-      height: 800px; }
-      .carousel .carousel-item img {
-        position: absolute;
-        top: 0;
-        left: 0;      
-        width: 100%;   
-        height: 100%;   
-        min-height: 300px;
-        margin-top: 60px; }
-  
-
-
-.bs-example{
-    margin: 0px;
+    background: transparent;
+    width: 100%;
+  }
+.carousel .carousel-item {
+    height: 590px;
+    width: 100%;
 }
+.carousel .carousel-item img {
+position: absolute;
+top: 0;
+left: 0;      
+width: 100%;   
+height: 40%; 
+min-width: 100%;  
+min-height: 100vh;
+margin-top: 60px; }
+.carousel .carousel-indicators li {
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+    background-color:#182a61;
+}
+.carousel #carousel-caption{
+    color: black;
+}
+.bs-example{
+margin: 0px;
+}*/
 
-
+#image1{
+    opacity: 0.5;
+}
 .footer {
-    background-color: teal;
-    margin: 0px auto;
-    padding-top: 50px;
+    background-color:  #182a61;
+    margin: 0px;
+    padding-top: 30px;
+    color: #fff;
 
 }
 
 .leftside{
     padding-left: 0px;
     margin-left: 0px;
-    top: 25%;
+    top: 30%;
     position: fixed;
     z-index: 999;
+    background:rgb(211,211,211,0.7);
+    border-radius: 5px;
 }
 .leftside li{
     list-style-type: none;
     margin-left: 0px;
     transition: .1s;
-    padding-left: 2px;
+    padding-left: 0px;
     position: relative;
     margin-top: 10px;
    
@@ -80,54 +120,59 @@ body
     color: black;
     margin-left: 0px;
     padding: 20px;
+    padding-left: 12px;
    
 
 }
-.leftside li:hover{
-    padding-left: 10px;
-}
 /*
+.leftside li:hover{
+   padding-left: 3px;
+} */
+
 #button-facebook i:hover {    
    background: #3b5998;
    color: #fff;
-   border-radius: 20px;
-   width: 59px;
-   margin-left: 0px;
-   
+   border-radius: 5px;
+   width: 100%;
+   height: 100%;
  
 } 
 
 #button-instagram i:hover{
    
-    border-radius: 20px;
+    border-radius: 0px;
     color: #fff;    
     background: #d6249f;
     background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
-   
+    width: 100%;
  
 }
 #button-linkedin i:hover{
     background: #0077B5;
     color: #fff;
-    border-radius: 20px;
+    border-radius: 0px;
+    width: 100%;
 }
 #button-pinterest i:hover{
 background:  #c8232c ;
 color: #fff;
-border-radius: 20px;
+border-radius: 5px;
+width: 100%;
 
 }
 #button-twitter i:hover{
     background: #38A1F3;
     color: #fff;
-    border-radius: 20px;
+    border-radius: 0px;
 }
 
+
 .leftside li:nth-child(1){
-    margin-left: 5px;
-    border-radius: 30%;
+    margin-left: 0px;
+    border-radius: 0%;
+    margin-top: 0px;
 }
-*/
+
 ul{
     list-style: none;
     border: none;
@@ -224,10 +269,17 @@ ul{
 */
 .media-body{
     padding-top: 40px;
+    text-align: left;
+    padding-left: 40px;
 }
+
 
 .image-circle{
     border-radius: 50%;
+    margin-left:  100px;
+    width: auto;
+    height: auto;
+    
 }
 .dropdown-menu a:hover {background-color: #ddd;}
 
@@ -235,3 +287,145 @@ ul{
 .dropdown:hover .dropdown-menu {display: block;}
 
 .dropdown:hover .btn {background-color: grey;}
+
+.counter {
+    background-color: #001233;
+    padding: 80px 80px;
+    border-radius: 0px;
+    margin-top: 15px;
+   
+}
+
+.count-title {
+    font-size: 40px;
+    font-weight: normal;
+    margin-top: 10px;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.count-text {
+    font-size: 20px;
+    font-weight: normal;
+    margin-top: 10px;
+    margin-bottom: 0;
+    text-align: center;
+    color: #fff;
+}
+.count-number{
+    color: #fff;
+}
+
+.fa-2x {
+    margin: 0 auto;
+    float: none;
+    display: table;
+    color: yellow;
+}
+/*
+#counter{
+    min-width: 196vh;
+    height: 200px;   
+    margin-left: 63px;
+    background: cadetblue;
+}
+#c-1{
+    background: #57a6a8;
+}
+
+#c-2{
+    background: #5f9ea0;
+}
+#c-3{
+    background: #66989a;
+}
+#c-4{
+    background: #6699ab;
+}
+*/
+#video{
+    margin-top: 30px;
+    
+    padding: 10px;
+}
+
+.underline{
+    font-size: 40px;
+    margin-top: 20px;
+    text-decoration: underline;
+    text-decoration-color: yellow;
+    text-decoration-style: solid;
+    text-underline-position: under;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.carousel-inner img {
+    width: 100%;
+    height: 100%;
+}
+
+.carousel .carousel-indicators li {
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    background-color:#182a61;
+}
+
+@media (max-width: 768px) {
+    .leftside {
+        display: none;
+    }
+}
+/*
+.contact {
+    position: fixed;
+    right: 0;
+    height: 350px;
+    width: 40px;
+    top: 30%;
+    position: fixed;
+    background: #182a61;
+    border-radius: 5px;
+    padding-right: 12px;    
+    color: white;
+
+ }
+ 
+ .contact:hover {
+     width: 30px;
+ }
+ .rotate-text {
+     font-size: 20px;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+    }*/
+
+#rotate{
+
+position: fixed;
+top:400px;
+width:180px;
+height:30px;
+margin-right: 0%;
+
+left: 0;
+float: right;
+background:#182a61;
+font-family: 'Times New Roman', Times, serif;
+font-size: 80px;
+border-radius: 5px;
+
+    
+-ms-transform:rotate(90deg); /* IE 9 */
+-moz-transform:rotate(90deg); /* Firefox */
+-webkit-transform:rotate(90deg); /* Safari and Chrome */
+-o-transform:rotate(90deg); /* Opera */}
+
+@media (max-width: 768px) {
+    .rightside {
+        display: none;
+    }
+}
