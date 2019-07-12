@@ -195,6 +195,7 @@ ul{
 .carousel-caption{
     text-align: center;
     height: 55%;
+    
 }
 
 @media (max-width: 500px) {
