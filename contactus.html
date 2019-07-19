@@ -31,6 +31,7 @@
   
 </head>
 <body>   
+    <!---->
 
     <nav class="navbar navbar-dark navbar-expand-lg fixed-top">      
         <div class="container col col-md-12 col-sm-4">
@@ -40,18 +41,14 @@
             <a class="navbar-brand mr-auto" href="./index.html">GrowUp</a><!--apt height and width for logo in navbar-->
             <div class="collapse navbar-collapse" id="Navbar">
                 <ul class="navbar-nav ml-auto ">
-                    <li class="nav-item"><a class="nav-link" href="#">Join GrowUp</a></li>        
-                    <li class="nav-item"><a class="nav-link" href="#">Media</a></li>    
-                    <li class="nav-item"><a class="nav-link" href="#">Pricing</a></li> 
-                    <li class="nav-item"><a class="nav-link" href="#">FAQs</a></li>    
-                    <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>                         
-                    <li class="nav-item active"><a class="nav-link" href="./contactus.html">Contact Us</a></li>  
-                </ul>
-                    <span class="navbar-text">
+                    <li class="navbar-text">
                         <a data-toggle="modal" data-target="#loginModal">                        
                             Login
                         </a>
-                    </span>
+                    </li>                    
+                    <li class="nav-item active"><a class="nav-link" href="./contactus.html">Contact Us</a></li>  
+                </ul>
+                   
                
             </div>
         </div>
@@ -95,76 +92,65 @@
     </div> 
     
     <div class="container-contact">
-        <img src="./resources/carousel_img_2.jpeg" alt="Notebook" style="width:100%;">
-        <div class="content">
-            <h1>Heading</h1>
-            <p>Lorem ipsum..</p>
-        </div>
-    </div>
+            <div class="row">
+              <div class="col-12 px-0">
+                <img class="img-fluid" src="./resources/carousel_img_2.jpeg">
+              </div>
+            </div>  
+          </div>
 
 
 
                
             <div class="row row-content">
                 
-                <div class="col-lg-6 col-md-6 col-sm-11 col-xs-11"style="background-color:lightgrey	;margin-top: 100px;">
+                <div class="col-lg-6 col-md-6 col-sm-11 col-xs-11" id="contact-form-left">
                     <div class="col">
-                        <h1 class="underline-form" style="padding-left:0px;padding-top: 20px; text-align: left;" >Send Us a Message</h1>            
+                        <h1 class="underline" id="contact-heading"  >Send Us a Message</h1>            
                     </div> 
-                    <div class="col" style="padding-top:52px;">
-                    <h5>Our sales team will get in touch with you to discuss your personalized requirements.</h5>
+                    <div class="col" id="contact-sub-head">
+                    <h6>Our sales team will get in touch with you to discuss your personalized requirements.</h6>
                     </div>
                     <form method="POST">
-                        <div class="form-group row"style="padding-top:20px;" >
-                            <label for="firstname" class="col-md-2 col-sm-11 col-xs-11 col-form-label" style="margin-left:5px;">First Name</label>
-                            <div class="col-md-9 col-sm-11 col-xs-11">
-                                <input type="text" class="form-control" id="firstname" name="firstname" placeholder="First Name">
+                        <div class="form-group row" id="form-content" >
+                            
+                            <label for="name" class="col-lg-10 offset-lg-2 col-sm-10 col-xs-10 col-form-label" id="form-details" >Name</label>
+                            <div class="col-lg-9 col-sm-4 offset-sm-2 col-xs-4 send-us" id="placeholder">
+                                <input type="text" class="form-control" id="name" name="name" placeholder="Name">
                             </div>
-                        </div>
+                        </div>                                   
                         <div class="form-group row" >
-                            <label for="lastname" class="col-md-2 col-sm-11 col-xs-11 col-form-label"style="margin-left:5px;">Last Name</label>
-                            <div class="col-md-9 col-sm-11 col-xs-11">
-                                <input type="text" class="form-control" id="lastname" name="lastname" placeholder="Last Name">
-                            </div>
-                        </div>
-            
-                        <div class="form-group row" >
-                            <label for="telnum" class="col-12 col-md-2 col-sm-11 col-xs-11 col-form-label"style="margin-left:5px;">Phone</label>
-                            <div class="col-3 col-md-2 col-sm-2 col-xs-2">
+                            <label for="telnum" class="col-12 col-md-12 col-sm-11 col-xs-11 col-form-label"id="form-details">Phone</label>
+                            <div class="col-lg-2 offset-lg-1 col-md-2 col-sm-2 col-xs-2 send-us" id="placeholder">
                                 <input type="tel" class="form-control" id="areacode" name="areacode" placeholder="Code">
                             </div>
-                            <div class="col-9 col-md-7 col-sm-8 col-xs-8">
+                            <div class="col-lg-6 col-md-7 col-sm-8 col-xs-8 send-us"id="placeholder">
                                 <input type="tel" class="form-control" id="telnum" name="telnum" placeholder="Telephone Number">
                             </div>
                         </div>
                         <div class="form-group row" >
-                            <label for="mail" class="col-12 col-md-2 col-sm-11 col-xs-11 col-form-label"style="margin-left:5px;">E-mail</label>
-                            <div class="col-md-9 col-sm-11 col-xs-11">
+                            <label for="mail" class="col-12 col-md-12 col-sm-11 col-xs-11 col-form-label"id="form-details">E-mail</label>
+                            <div class="col-lg-9 offset-lg-1 col-sm-11 col-xs-11 send-us" id="placeholder">
                                 <input type="email" class="form-control" id="mail" name="mail" placeholder="E-mail">
                             </div>
                         </div>
                         <div class="form-group row">
-                            <div class="col-md-6 offset-md-2 col-sm-11 col-xs-11">
+                            <div class="col-md-6 offset-md-1 col-sm-11 col-xs-11" id="placeholder">
                                 <div class="form-check">
                                 <input type="checkbox" class="form-check-input" name="approve" id="approve" value="">
                                 <label class="form-check-label" for="approve"><strong>May we contact you?</strong></label>
                                 </div>
                             </div>
-                            <div class="col-md-3 col-sm-2 col-xs-2">
-                                <select class="form-control" id="selected">
-                                    <option value="Telph">Telephone</option>
-                                    <option value="email">E-mail</option>
-                                </select>
-                            </div>                 
+               
                         </div>
                         <div class="form-group row" >
-                            <label for="feedback" class="col-12 col-md-2 col-sm-11 col-xs-11 col-form-label"style="margin-left:5px;">Your Feedback</label>
-                            <div class="col-md-9">
+                            <label for="feedback" class="col-12 col-md-12 col-sm-11 col-xs-11 col-form-label"id="form-details">Your Feedback</label>
+                            <div class="col-lg-9 offset-lg-1 col-sm-11 col-xs-11 send-us" id="placeholder">
                                 <textarea class="form-control" id="feedback" name="feedback" rows="12"></textarea>
                             </div>
                         </div>
                         <div class="form-group">
-                            <div class="offset-md-2 col-md-10 col-sm-11 col-xs-11">
+                            <div class="offset-md-1 col-md-10 col-sm-11 col-xs-11"id="placeholder">
                                 <button type="submit" class="btn btn-primary">
                                     Send Feedback
                                 </button>
@@ -172,18 +158,25 @@
                         </div>
                     </form>
                         
-                </div>                              
-          
-            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" style="background-color:whitesmoke	;margin-top: 100px;">
-                <h1 class="underline-form"style="padding-left:10px;padding-top: 20px;"> Get in Touch </h1><br><br>
-                <h3 style="padding-left:10px;text-align: justify;">Find us at </h3>
-                <div class="col-md-8 col-sm-4 col-xs-4" style="margin-bottom:30px;">
-                        <i class="fa fa-map-marker" aria-hidden="true"style="padding-top:30px; font-size:18px;"> &nbsp;&nbsp; : We Work, Platina Tower, Mehrauli-Gurgaon Rd, Gurugram, Haryana<br>122002
-                            </i><br>
-                        <i class="fa fa-phone fa-lg" style="padding-top:30px; font-size:30px;"></i>&nbsp;&nbsp; : +91 83830 92878
-                        <br>
+                </div>          
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" id="contact-form-right">
+                <div class="col">
+                    <h1 class="underline" id="contact-heading"  >Get in Touch</h1>            
+                </div>
+                <div class="col" id="contact-sub-head">
+                <h6>Find us at: </h6>
+                </div>
+                <div class="col-md-12 col-sm-4 col-xs-4" id="form-content">
+                    <ul class="contact-address-list">
+                        <li><span><i class="fa fa-map-marker" id="contact-details" aria-hidden="true"></i></span>
+                        : We Work, Platina Tower, Mehrauli-Gurgaon Rd,Gurugram, Haryana-122002</li>
                         
-                       <i class="fa fa-envelope-o"style="padding-top:30px; font-size:30px;"></i>&nbsp;&nbsp; : connect@vgrowup.com</a>
+                        <li><span><i class="fa fa-phone" id="contact-details"></i></span>
+                            : +91 83830 92878</li>
+                        
+                        
+                        <li><span><i class="fa fa-envelope-o"id="contact-details"></i></span>
+                             : connect@vgrowup.com</a></li>
                    
                 </div>
                 
@@ -191,17 +184,92 @@
             
         </div>
     </div>
-    <!--Footer-->
-    <footer class="footer">
-            <div class="container">
-                <div class="row justify-content-center">             
-                    <div class="col-lg-4 col-md-7 col-sm-4 ml-5 offset-lg-3">
-                        <p>© GrowUp Technologies Pvt Ltd. 2019</p>
-                    </div>
+     <!--Footer-->
+     <footer class="footer">
+        <div class="container">
+            <div class="row">             
+                <div class="col-lg-2 offset-lg-1 col-sm-2">
+                    <div class="visually-hidden underline " id="block-quicklinks-menu">Quick Links</div>                          
+                    
+                        <ul class="list-unstyled quick-links">                                
+                            <li><a id="footer-link" href="#">About Us </a></li>
+                            
+                            <li><a id="footer-link" href="#">Our Brands </a></li>
+                            
+                            <li><a id="footer-link" href="#">Resources </a></li>
+                            
+                           
+                        </ul>           
                 </div>
-            </div>
-        </footer>
-       
+                <div class="col-lg-3  col-sm-2">
+                    <div class="visually-hidden underline" id="block-quicklinks-menu">Our Host Services</div>                          
+                
+                    <ul class="list-unstyled quick-links">                                
+                        <li><a id="footer-link" href="#">First </a></li>
+                        
+                        <li><a id="footer-link" href="#">Second </a></li>
+                        
+                        <li><a id="footer-link" href="#">Third </a></li>
+                        
+                        
+                    </ul>   
+                </div>
+                <div class="col-lg-3 col-sm-2">
+                        <div class="visually-hidden underline" id="block-quicklinks-menu">Know More</div>                                          
+                    
+                    <ul class="list-unstyled quick-links">                                
+                        <li><a id="footer-link" href="#">Join Growup </a></li>
+                        
+                        <li><a id="footer-link" href="#">Contact Us </a></li>
+                        
+                        <li><a id="footer-link" href="#">Growup Blog </a></li>
+                        
+                        
+                    </ul>   
+                </div>
+                <div class="col-lg-3 col-sm-2">
+                        <form>                  
+                    
+                    <ul class="list-unstyled footer-form">                                
+                        <li > <input type="text" class="form-control form-control-sm " id="name" name="name" placeholder="Enter Name">
+                        </li>
+
+                        <li style="padding-top:20px;">
+                                <input type="email" class="form-control form-control-sm" id="mail" name="mail" placeholder="Enter E-mail">
+                        </li>
+
+                        <li style="padding-top:10px; padding-left: 0px;">                                        
+                            <button type="submit" class="btn btn-primary btn-xl ">Submit</button>        
+                        </li>                            
+                        
+                    </ul>   
+                </div>
+            </form>
+                
+                
+           </div>
+        </div>
+</footer>
+    <footer>
+               
+        <div class="row justify-content-center footer-se">             
+             <div class="col-auto footer-copyright ">
+                 <p>© GrowUp Technologies Pvt Ltd. 2019</p>
+             </div>
+        
+        <div class="col-lg-4 pull-right">
+             <div class="text-center footer-social-btn">                                
+                     <a class="btn btn-social-icon btn-facebook" href="https://www.facebook.com/growuptechnologies/" target="_blank"><i class="fa fa-facebook fa-lg"></i></a>
+                     <a class="btn btn-social-icon btn-linkedin" href="https://www.linkedin.com/company/growuptechnologies/"target="_blank"><i class="fa fa-linkedin fa-lg"></i></a>
+                     <a class="btn btn-social-icon btn-twitter" href="https://twitter.com/growuptech"target="_blank"><i class="fa fa-twitter fa-lg"></i></a>
+                     <a class="btn btn-social-icon btn-instagram" href="https://www.instagram.com/growuptechnologies/"target="_blank"><i class="fa fa-instagram fa-lg"></i></a>
+                     <a class="btn btn-social-icon btn-pinterest" href="https://www.pinterest.com/growuptechnologies/"target="_blank"><i class="fa fa-pinterest fa-lg"></i></a>
+                     
+             </div>
+         </div>
+         </div>
+     
+ </footer> 
 <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
 <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
 <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>

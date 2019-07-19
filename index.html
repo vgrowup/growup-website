@@ -32,30 +32,27 @@
 </head>
 <body>   
 
-    <nav class="navbar navbar-dark navbar-expand-lg fixed-top">      
-        <div class="container col col-md-12 col-sm-4">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
-                <span class="navbar-toggler-icon"></span> <!--three line drop down for mobile view-->
-            </button>
-            <a class="navbar-brand mr-auto" href="./index.html">GrowUp</a><!--apt height and width for logo in navbar-->
-            <div class="collapse navbar-collapse" id="Navbar">
-                <ul class="navbar-nav ml-auto ">
-                    <li class="nav-item"><a class="nav-link" href="#">Join GrowUp</a></li>        
-                    <li class="nav-item"><a class="nav-link" href="#">Media</a></li>    
-                    <li class="nav-item"><a class="nav-link" href="#">Pricing</a></li> 
-                    <li class="nav-item"><a class="nav-link" href="#">FAQs</a></li>    
-                    <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>                         
-                    <li class="nav-item"><a class="nav-link" href="./contactus.html">Contact Us</a></li>  
-                </ul>
-                    <span class="navbar-text">
-                        <a data-toggle="modal" data-target="#loginModal">                        
-                            Login
-                        </a>
-                    </span>
-               
-            </div>
-        </div>
-    </nav>
+        
+        <nav class="navbar navbar-dark navbar-expand-lg fixed-top">      
+                <div class="container col col-md-12 col-sm-4">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+                        <span class="navbar-toggler-icon"></span> <!--three line drop down for mobile view-->
+                    </button>
+                    <a class="navbar-brand mr-auto" href="./index.html">GrowUp</a><!--apt height and width for logo in navbar-->
+                    <div class="collapse navbar-collapse" id="Navbar">
+                        <ul class="navbar-nav ml-auto ">
+                            <li class="navbar-text">
+                                <a data-toggle="modal" data-target="#loginModal">                        
+                                    Login
+                                </a>
+                            </li>
+                            <li class="nav-item"><a class="nav-link" href="./contactus.html">Contact Us</a></li>  
+                        </ul>
+                           
+                       
+                    </div>
+                </div>
+            </nav>
     <div id="loginModal" class="modal fade" role="dialog"><!--Role: to diplay on top of the page-->
         <div class="modal-dialog modal-lg" role="content">
             <div class="modal-content">
@@ -93,6 +90,7 @@
             </div>
         </div>
     </div>    
+    
 
     <!--Carousel-->
 
@@ -102,27 +100,28 @@
             <li data-target="#demo" data-slide-to="0" class="active"></li>
             <li data-target="#demo" data-slide-to="1"></li>
             <li data-target="#demo" data-slide-to="2"></li>
+            <li data-target="#demo" data-slide-to="3"></li>
         </ul>
         
         <!-- The slideshow -->
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="./resources/carousel_img_2.jpeg" alt="Los Angeles" width="1100" height="500">
+                <img src="./resources/carousel_img_3.jpg" alt="Los Angeles" width="1100" height="500">
                 <div class="container">
                     <div class="carousel-caption">
                         
                         <h2>You can outsource TIME!</h2>
-                        <p><a class="btn btn-lg btn-primary" href="#" role="button">Know How</a></p>
+                        <p><a class="btn btn-lg btn-primary" href="#" role="button" id="carousel-button" >Know How</a></p>
                     </div>
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="./resources/carousel_img_4.jpg" alt="Chicago" width="1100" height="500">
+                <img src="./resources/carousel_img_3.jpg" alt="Chicago" width="1100" height="500">
                 <div class="container">
                     <div class="carousel-caption">
                         
                         <h2>Hire affordable employees</h2>
-                        <p><a class="btn btn-lg btn-primary" href="#" role="button">Hire Now</a></p>
+                        <p><a class="btn btn-lg btn-primary" href="#" role="button"id="carousel-button">Hire Now</a></p>
                     </div>
                 </div>
             </div>
@@ -132,17 +131,17 @@
                     <div class="carousel-caption">
                         
                         <h2>Outsource| Outperform| Optimise</h2>
-                        <p><a class="btn btn-lg btn-primary" href="#" role="button">Know More</a></p>
+                        <p><a class="btn btn-lg btn-primary" href="#" role="button" id="carousel-button">Know More</a></p>
                     </div>
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="./resources/carousel_img_1.jpg" alt="New York" width="1100" height="500">
+                <img src="./resources/carousel_img_3.jpg" alt="New York" width="1100" height="500">
                 <div class="container">
                     <div class="carousel-caption">
                        
                         <h2>Create your workplace Beyond Boundaries!</h2>
-                        <p><a class="btn btn-lg btn-primary" href="#" role="button">Know More</a></p>
+                        <p><a class="btn btn-lg btn-primary" href="#" role="button"id="carousel-button">Know More</a></p>
                     </div>
                 </div>
             </div>
@@ -152,25 +151,23 @@
         <a class="carousel-control-prev" href="#demo" data-slide="prev">
             <span class="carousel-control-prev-icon"></span>
         </a>
-        <a class="carousel-control-next" href="#demo" data-slide="next">
-            <span class="carousel-control-next-icon"></span>
-        </a>
+       
     </div>
 
        
 <!--Content-->
     <div class="row">                
         <div class="col text-center">
-            <h2 class="underline offset-lg-0" style="margin-top:100px;" >Our Members</h2>            
+            <h2 class="underline offset-lg-0" id="content-heading">Our Members</h2>            
         </div> 
     </div>     
     <div class="row">
-        <div class="column" style="background-color:#aaa; margin-top: 40px;">
+        <div class="column" id="content-image">
             <img class="col" src="./resources/content_img.png">
         </div>
-        <div class="column col" style="background-color:#E0EEEE	;margin-top: 40px;">
-             <h1 class="underline" style="padding-left:10px; text-align: center;">   Bring Order to Your Chaos </h1><br><br>
-             <p style="padding-left:10px;text-align: justify;">Willy Wonka once said: “So much time and so little to do!”<br> 
+        <div class="column col" id="content-text-section">
+             <h1 class="underline" id="content-sub-head">   Bring Order to Your Chaos </h1><br><br>
+             <p id="content-text">Willy Wonka once said: “So much time and so little to do!”<br> 
                 If only that were reality. As a business owner, the opposite seems true every day.<br>
                 You need a team. But let’s face it: hiring is complicated. The right person for your company<br>
                 doesn’t seem to exist, leaving you with feelings of chaos, uncertainty,<br>
@@ -190,7 +187,7 @@
         <li id="button-facebook"><a href="https://www.facebook.com/growuptechnologies/" target="_blank"><i class="fa fa-facebook"></i></a></li>
         <li id="button-linkedin"><a href="https://www.linkedin.com/company/growuptechnologies/"target="_blank"><i class="fa fa-linkedin"></i></a></li>
         <li id="button-instagram"><a href="https://www.instagram.com/growuptechnologies/"target="_blank"><i class="fa fa-instagram"></i></a></li>        
-        <li id="button-pinterest"><i class="fa fa-pinterest"></i></li>        
+        <li id="button-pinterest"><a href="https://www.pinterest.com/growuptechnologies/"target="_blank"><i class="fa fa-pinterest"></i></a></li>        
     </div>
 
     
@@ -200,14 +197,14 @@
         <div class="row">
             <br/>
             <div class="col text-center">
-                <h2 class="underline" style="margin-top:100px;">Our Facts</h2>                
+                <h2 class="underline" id="content-heading">Our Facts</h2>                
             </div> 
         </div> 
     </div>
 
     <div class="row text-center"  >
             
-        <div class="col col-md-4" id="counterbg" style="margin-top:40px;">
+        <div class="col col-md-4" id="counterbg">
            <div class="counter-1">
             <i class="fa fa-check-circle fa-2x"></i>
             <h2 class="timer count-title count-number" data-to="100" data-speed="1500"></h2>
@@ -215,7 +212,7 @@
             </div>
         </div>
         
-        <div class="col col-md-4"id="counterbg"  style="margin-top:40px;">
+        <div class="col col-md-4"id="counterbg">
             <div class="counter-2">
             <i class="fa fa-tasks fa-2x"></i>
             <h2 class="timer count-title count-number" data-to="1700" data-speed="1500"></h2>
@@ -223,7 +220,7 @@
             </div>
         </div>
         
-        <div class="col col-md-4"id="counterbg"  style="margin-top:40px;">
+        <div class="col col-md-4"id="counterbg">
            <div class="counter-3">
             <i class="fa fa-users fa-2x"></i>
             <h2 class="timer count-title count-number" data-to="11900" data-speed="1500"></h2>
@@ -237,29 +234,16 @@
     <!--Video Section-->
     <div class="container" id="video">
         <div class="col-lg-11 offset-lg-1">
-            <div class="embed-responsive embed-responsive-16by9" style="margin-top:40px;">
+            <div class="embed-responsive embed-responsive-16by9">
                 <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/qN3OueBm9F4"></iframe>
             </div>
         </div>
     </div>
-
-
-    <!--Footer-->
-    <footer class="footer">
-        <div class="container">
-            <div class="row justify-content-center">             
-                <div class="col-lg-4 col-md-7 col-sm-4 ml-5 offset-lg-3">
-                    <p>© GrowUp Technologies Pvt Ltd. 2019</p>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <!--Request a Consultation Form and Button-->
+<!--Request a Consultation Form and Button-->
     <div class="offset-lg-11 pull-right rightside" id="rotate">
         <button type="button" class="btn btn-sm btn-block" 
             data-toggle="modal" data-target="#reserveModal"role="button">
-            <strong style="color:white; font-size: 18px;">Request a Consultation</strong></a>
+            <strong id="right-button">Request a Consultation</strong>
         </button>
     </div>
     <div id="reserveModal" class="modal fade" role="dialog"><!--Role: to diplay on top of the page-->
@@ -311,6 +295,95 @@
         </div>
     </div>
        
+
+     <!--Footer-->
+     <footer class="footer">
+            <div class="container">
+                <div class="row">             
+                    <div class="col-lg-2 offset-lg-1 col-sm-2">
+                        <div class="visually-hidden underline " id="block-quicklinks-menu">Quick Links</div>                          
+                        
+                            <ul class="list-unstyled quick-links">                                
+                                <li><a id="footer-link" href="#">About Us </a></li>
+                                
+                                <li><a id="footer-link" href="#">Our Brands </a></li>
+                                
+                                <li><a id="footer-link" href="#">Resources </a></li>
+                                
+                               
+                            </ul>           
+                    </div>
+                    <div class="col-lg-3  col-sm-2">
+                        <div class="visually-hidden underline" id="block-quicklinks-menu">Our Host Services</div>                          
+                    
+                        <ul class="list-unstyled quick-links">                                
+                            <li><a id="footer-link" href="#">First </a></li>
+                            
+                            <li><a id="footer-link" href="#">Second </a></li>
+                            
+                            <li><a id="footer-link" href="#">Third </a></li>
+                            
+                            
+                        </ul>   
+                    </div>
+                    <div class="col-lg-3 col-sm-2">
+                            <div class="visually-hidden underline" id="block-quicklinks-menu">Know More</div>                                          
+                        
+                        <ul class="list-unstyled quick-links">                                
+                            <li><a id="footer-link" href="#">Join Growup </a></li>
+                            
+                            <li><a id="footer-link" href="#">Contact Us </a></li>
+                            
+                            <li><a id="footer-link" href="#">Growup Blog </a></li>
+                            
+                            
+                        </ul>   
+                    </div>
+                    <div class="col-lg-3 col-sm-2">
+                            <form>                  
+                        
+                        <ul class="list-unstyled footer-form">                                
+                            <li > <input type="text" class="form-control form-control-sm " id="name" name="name" placeholder="Enter Name">
+                            </li>
+
+                            <li style="padding-top:20px;">
+                                    <input type="email" class="form-control form-control-sm" id="mail" name="mail" placeholder="Enter E-mail">
+                            </li>
+
+                            <li style="padding-top:10px; padding-left: 0px;">                                        
+                                <button type="submit" class="btn btn-primary btn-xl ">Submit</button>        
+                            </li>                            
+                            
+                        </ul>   
+                    </div>
+                </form>
+                    
+                    
+               </div>
+            </div>
+    </footer>
+    <footer>
+               
+               <div class="row justify-content-center footer-se">             
+                    <div class="col-auto footer-copyright ">
+                        <p>© GrowUp Technologies Pvt Ltd. 2019</p>
+                    </div>
+               
+               <div class="col-lg-4 pull-right">
+                    <div class="text-center footer-social-btn">                                
+                            <a class="btn btn-social-icon btn-facebook" href="https://www.facebook.com/growuptechnologies/" target="_blank"><i class="fa fa-facebook fa-lg"></i></a>
+                            <a class="btn btn-social-icon btn-linkedin" href="https://www.linkedin.com/company/growuptechnologies/"target="_blank"><i class="fa fa-linkedin fa-lg"></i></a>
+                            <a class="btn btn-social-icon btn-twitter" href="https://twitter.com/growuptech"target="_blank"><i class="fa fa-twitter fa-lg"></i></a>
+                            <a class="btn btn-social-icon btn-instagram" href="https://www.instagram.com/growuptechnologies/"target="_blank"><i class="fa fa-instagram fa-lg"></i></a>
+                            <a class="btn btn-social-icon btn-pinterest" href="https://www.pinterest.com/growuptechnologies/"target="_blank"><i class="fa fa-pinterest fa-lg"></i></a>
+                            
+                    </div>
+                </div>
+                </div>
+            
+        </footer> 
+       
+    
 <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
 <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
 <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
