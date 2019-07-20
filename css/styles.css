@@ -415,9 +415,9 @@ font-size: 18px;
     font-size: 10px;
 }
 .footer-social-btn a:hover {
-    color:black;
+    color:#FFA501;
   
-    background: #FFA501;
+    background: transparent;
 }
 .footer-copyright{
     padding-top:10px;
